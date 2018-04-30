@@ -6,19 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="https://sysPursuer.github.io">
-  <title>exercise_week1 | sysPursuer&#39;s blog</title>
+  <title>exercise_week6 | sysPursuer&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Chapter2 变量和简单数据类型 2-2 将一条消息存储到变量中，将其打印出来；再将变量的值修改为一条新的消息，并将其打印出来。   1234message = &quot;hello,world&quot;print(message)message = &quot;hell0,python&quot;print(message)  2-3 将用户的姓名存到一个变量中，并向该用户显示一条消息。显示的消息非常简单。比如”Hello E">
+  <meta name="description" content="Chapter10 文件和异常 10-1 python学习笔记。  123456789with open(&quot;learn_py.txt&quot;) as file_obj:	contents = file_obj.read()	print(contents)	file_obj.seek(0,0)	for line in file_obj:		print(line.rstrip())	file_obj.see">
 <meta name="keywords" content="高级编程技术,python,homework">
 <meta property="og:type" content="article">
-<meta property="og:title" content="exercise_week1">
-<meta property="og:url" content="https://sysPursuer.github.io/2018/03/08/hw1/index.html">
+<meta property="og:title" content="exercise_week6">
+<meta property="og:url" content="https://sysPursuer.github.io/2018/04/14/hw6/index.html">
 <meta property="og:site_name" content="sysPursuer&#39;s blog">
-<meta property="og:description" content="Chapter2 变量和简单数据类型 2-2 将一条消息存储到变量中，将其打印出来；再将变量的值修改为一条新的消息，并将其打印出来。   1234message = &quot;hello,world&quot;print(message)message = &quot;hell0,python&quot;print(message)  2-3 将用户的姓名存到一个变量中，并向该用户显示一条消息。显示的消息非常简单。比如”Hello E">
-<meta property="og:updated_time" content="2018-04-30T13:11:23.227Z">
+<meta property="og:description" content="Chapter10 文件和异常 10-1 python学习笔记。  123456789with open(&quot;learn_py.txt&quot;) as file_obj:	contents = file_obj.read()	print(contents)	file_obj.seek(0,0)	for line in file_obj:		print(line.rstrip())	file_obj.see">
+<meta property="og:updated_time" content="2018-04-30T16:41:04.040Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="exercise_week1">
-<meta name="twitter:description" content="Chapter2 变量和简单数据类型 2-2 将一条消息存储到变量中，将其打印出来；再将变量的值修改为一条新的消息，并将其打印出来。   1234message = &quot;hello,world&quot;print(message)message = &quot;hell0,python&quot;print(message)  2-3 将用户的姓名存到一个变量中，并向该用户显示一条消息。显示的消息非常简单。比如”Hello E">
+<meta name="twitter:title" content="exercise_week6">
+<meta name="twitter:description" content="Chapter10 文件和异常 10-1 python学习笔记。  123456789with open(&quot;learn_py.txt&quot;) as file_obj:	contents = file_obj.read()	print(contents)	file_obj.seek(0,0)	for line in file_obj:		print(line.rstrip())	file_obj.see">
   
     <link rel="alternative" href="/atom.xml" title="sysPursuer&#39;s blog" type="application/atom+xml">
   
@@ -144,49 +144,38 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-hw1" class="article article-type-post " itemscope itemprop="blogPost">
+            <article id="post-hw6" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      exercise_week1
+      exercise_week6
     </h1>
   
 
         
-        <a href="/2018/03/08/hw1/" class="archive-article-date">
-  	<time datetime="2018-03-08T15:37:31.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-03-08</time>
+        <a href="/2018/04/14/hw6/" class="archive-article-date">
+  	<time datetime="2018-04-14T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-14</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="Chapter2-变量和简单数据类型"><a href="#Chapter2-变量和简单数据类型" class="headerlink" title="Chapter2 变量和简单数据类型"></a>Chapter2 变量和简单数据类型</h3><ul>
-<li><p>2-2 将一条消息存储到变量中，将其打印出来；再将变量的值修改为一条新的消息，并将其打印出来。  </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">message = <span class="string">"hello,world"</span></span><br><span class="line">print(message)</span><br><span class="line">message = <span class="string">"hell0,python"</span></span><br><span class="line">print(message)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>2-3 将用户的姓名存到一个变量中，并向该用户显示一条消息。显示的消息非常简单。比如”Hello Eric, would you like to learn some Python today?”  </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">name = input(<span class="string">"What's your name? "</span>)</span><br><span class="line">print(<span class="string">"Hello "</span>+name+<span class="string">", today is nice!"</span>)</span><br></pre></td></tr></table></figure>
-</li>
+        <h3 id="Chapter10-文件和异常"><a href="#Chapter10-文件和异常" class="headerlink" title="Chapter10 文件和异常"></a>Chapter10 文件和异常</h3><ul>
+<li>10-1 python学习笔记。</li>
 </ul>
-<a id="more"></a>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(<span class="string">"learn_py.txt"</span>) <span class="keyword">as</span> file_obj:</span><br><span class="line">	contents = file_obj.read()</span><br><span class="line">	print(contents)</span><br><span class="line">	file_obj.seek(<span class="number">0</span>,<span class="number">0</span>)</span><br><span class="line">	<span class="keyword">for</span> line <span class="keyword">in</span> file_obj:</span><br><span class="line">		print(line.rstrip())</span><br><span class="line">	file_obj.seek(<span class="number">0</span>,<span class="number">0</span>)</span><br><span class="line">	lines = file_obj.readlines()</span><br><span class="line">	print(lines)</span><br></pre></td></tr></table></figure>
 <ul>
-<li><p>2-4 以小写、大写、首字母大写的方式显示人名。  </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">"James"</span></span><br><span class="line">print(name.lower())</span><br><span class="line">print(name.upper())</span><br><span class="line">print(name.title())</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>2-6 打印名人名言。  </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">"Albert Einstein"</span></span><br><span class="line">message = <span class="string">"A person who never made a mistake never tried anything new."</span></span><br><span class="line">print(name + <span class="string">' once said, "'</span>+message+<span class="string">'"'</span>)</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>2-8 打印4个表达式，其结果都是8.  </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">print(<span class="number">2</span>*<span class="number">4</span>)</span><br><span class="line">print(<span class="number">2</span>*(<span class="number">6</span><span class="number">-2</span>))</span><br><span class="line">print(int(<span class="number">24</span>/<span class="number">3</span>))</span><br><span class="line">print(int((<span class="number">4</span>*<span class="number">6</span>)/<span class="number">3</span>))</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>2-9 将最喜欢的数字存储在一个变量中，再使用这个变量创建一条消息，指出你最喜欢的数字，然后将这条消息打印出来。  </p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">number = <span class="number">8</span></span><br><span class="line">number = <span class="string">"My favourite number is "</span> + str(number)</span><br><span class="line">print(number)</span><br></pre></td></tr></table></figure>
-</li>
+<li>10-2 C语言学习笔记。</li>
 </ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(<span class="string">"learn_py.txt"</span>) <span class="keyword">as</span> file_obj:</span><br><span class="line">	<span class="keyword">for</span> line <span class="keyword">in</span> file_obj:</span><br><span class="line">		line=line.replace(<span class="string">'python'</span>,<span class="string">'C'</span>)</span><br><span class="line">		print(line,end=<span class="string">''</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>10-4 访客名单。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(<span class="string">'guest.txt'</span>,<span class="string">'a'</span>) <span class="keyword">as</span> file:</span><br><span class="line">	<span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">		name = input(<span class="string">"Please input your name:\n"</span>)</span><br><span class="line">		print(<span class="string">"Hello, "</span>+name)</span><br><span class="line">		file.write(name+<span class="string">"\n"</span>)</span><br></pre></td></tr></table></figure>
 
       
 
@@ -285,7 +274,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=https://sysPursuer.github.io/2018/03/08/hw1/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=https://sysPursuer.github.io/2018/04/14/hw6/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -299,18 +288,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/03/16/hw2/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          exercise_week2
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/03/08/Pyhton入门/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">PythonStarted_week1</div>
+    <a href="/2018/04/07/hw5/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">exercise_week5</div>
       <i class="icon-circle-right"></i>
     </a>
   

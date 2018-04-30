@@ -141,6 +141,101 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-hw6" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/04/14/hw6/">exercise_week6</a>
+    </h1>
+  
+
+        
+        <a href="/2018/04/14/hw6/" class="archive-article-date">
+  	<time datetime="2018-04-14T04:00:00.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-04-14</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="Chapter10-文件和异常"><a href="#Chapter10-文件和异常" class="headerlink" title="Chapter10 文件和异常"></a>Chapter10 文件和异常</h3><ul>
+<li>10-1 python学习笔记。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(<span class="string">"learn_py.txt"</span>) <span class="keyword">as</span> file_obj:</span><br><span class="line">	contents = file_obj.read()</span><br><span class="line">	print(contents)</span><br><span class="line">	file_obj.seek(<span class="number">0</span>,<span class="number">0</span>)</span><br><span class="line">	<span class="keyword">for</span> line <span class="keyword">in</span> file_obj:</span><br><span class="line">		print(line.rstrip())</span><br><span class="line">	file_obj.seek(<span class="number">0</span>,<span class="number">0</span>)</span><br><span class="line">	lines = file_obj.readlines()</span><br><span class="line">	print(lines)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>10-2 C语言学习笔记。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(<span class="string">"learn_py.txt"</span>) <span class="keyword">as</span> file_obj:</span><br><span class="line">	<span class="keyword">for</span> line <span class="keyword">in</span> file_obj:</span><br><span class="line">		line=line.replace(<span class="string">'python'</span>,<span class="string">'C'</span>)</span><br><span class="line">		print(line,end=<span class="string">''</span>)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>10-4 访客名单。</li>
+</ul>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(<span class="string">'guest.txt'</span>,<span class="string">'a'</span>) <span class="keyword">as</span> file:</span><br><span class="line">	<span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">		name = input(<span class="string">"Please input your name:\n"</span>)</span><br><span class="line">		print(<span class="string">"Hello, "</span>+name)</span><br><span class="line">		file.write(name+<span class="string">"\n"</span>)</span><br></pre></td></tr></table></figure>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">高级编程技术</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color2">python</a>
+        		</li>
+      		 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">homework</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/04/14/hw6/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+
+
+  
     <article id="post-hw5" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
@@ -161,7 +256,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="Chapter9类"><a href="#Chapter9类" class="headerlink" title="Chapter9类"></a>Chapter9类</h3><ul>
+        <h3 id="Chapter9-类"><a href="#Chapter9-类" class="headerlink" title="Chapter9 类"></a>Chapter9 类</h3><ul>
 <li>9.1餐馆。</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Restaurant</span><span class="params">()</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self,name,cuisine_type)</span>:</span></span><br><span class="line">        self.restaurant_name = name</span><br><span class="line">        self.c_type = cuisine_type</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">describe_restaurant</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(self.restaurant_name+<span class="string">', '</span>+self.c_type)</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">open_restuarant</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(self.restaurant_name+<span class="string">" is in work!"</span>)</span><br><span class="line">rest = Restaurant(<span class="string">"MacDonald"</span>,<span class="string">"Fast-Food"</span>)</span><br><span class="line">rest.describe_restaurant()</span><br><span class="line">rest.open_restuarant()</span><br></pre></td></tr></table></figure>
@@ -511,7 +606,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ul>
+        <h3 id="Chapter3-列表简介"><a href="#Chapter3-列表简介" class="headerlink" title="Chapter3 列表简介"></a>Chapter3 列表简介</h3><ul>
 <li>3-1 遍历列表的元素并打印出来。</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">names = [<span class="string">"Alice"</span>,<span class="string">"Mike"</span>,<span class="string">"James"</span>,<span class="string">"John"</span>,<span class="string">"Amy"</span>]</span><br><span class="line"><span class="keyword">for</span> name <span class="keyword">in</span> names:</span><br><span class="line">    print(name,end=<span class="string">' '</span>)</span><br><span class="line">print()</span><br></pre></td></tr></table></figure>
@@ -600,7 +695,7 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <ul>
+        <h3 id="Chapter2-变量和简单数据类型"><a href="#Chapter2-变量和简单数据类型" class="headerlink" title="Chapter2 变量和简单数据类型"></a>Chapter2 变量和简单数据类型</h3><ul>
 <li><p>2-2 将一条消息存储到变量中，将其打印出来；再将变量的值修改为一条新的消息，并将其打印出来。  </p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">message = <span class="string">"hello,world"</span></span><br><span class="line">print(message)</span><br><span class="line">message = <span class="string">"hell0,python"</span></span><br><span class="line">print(message)</span><br></pre></td></tr></table></figure>
 </li>
