@@ -161,19 +161,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="Chapter10-文件和异常"><a href="#Chapter10-文件和异常" class="headerlink" title="Chapter10 文件和异常"></a>Chapter10 文件和异常</h3><ul>
-<li>10-1 python学习笔记。</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(<span class="string">"learn_py.txt"</span>) <span class="keyword">as</span> file_obj:</span><br><span class="line">	contents = file_obj.read()</span><br><span class="line">	print(contents)</span><br><span class="line">	file_obj.seek(<span class="number">0</span>,<span class="number">0</span>)</span><br><span class="line">	<span class="keyword">for</span> line <span class="keyword">in</span> file_obj:</span><br><span class="line">		print(line.rstrip())</span><br><span class="line">	file_obj.seek(<span class="number">0</span>,<span class="number">0</span>)</span><br><span class="line">	lines = file_obj.readlines()</span><br><span class="line">	print(lines)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>10-2 C语言学习笔记。</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(<span class="string">"learn_py.txt"</span>) <span class="keyword">as</span> file_obj:</span><br><span class="line">	<span class="keyword">for</span> line <span class="keyword">in</span> file_obj:</span><br><span class="line">		line=line.replace(<span class="string">'python'</span>,<span class="string">'C'</span>)</span><br><span class="line">		print(line,end=<span class="string">''</span>)</span><br></pre></td></tr></table></figure>
-<ul>
-<li>10-4 访客名单。</li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(<span class="string">'guest.txt'</span>,<span class="string">'a'</span>) <span class="keyword">as</span> file:</span><br><span class="line">	<span class="keyword">while</span> <span class="keyword">True</span>:</span><br><span class="line">		name = input(<span class="string">"Please input your name:\n"</span>)</span><br><span class="line">		print(<span class="string">"Hello, "</span>+name)</span><br><span class="line">		file.write(name+<span class="string">"\n"</span>)</span><br></pre></td></tr></table></figure>
-
+        <h3 id="Chapter10-文件和异常"><a href="#Chapter10-文件和异常" class="headerlink" title="Chapter10 文件和异常"></a>Chapter10 文件和异常</h3>
+        
+          <a class="article-more-a" href="/2018/04/14/hw6/#more">more >></a>
+        
       
 
       

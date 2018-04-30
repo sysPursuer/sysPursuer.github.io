@@ -8,17 +8,17 @@
   <link rel="dns-prefetch" href="https://sysPursuer.github.io">
   <title>exercise_week6 | sysPursuer&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="Chapter10 文件和异常 10-1 python学习笔记。  123456789with open(&quot;learn_py.txt&quot;) as file_obj:	contents = file_obj.read()	print(contents)	file_obj.seek(0,0)	for line in file_obj:		print(line.rstrip())	file_obj.see">
+  <meta name="description" content="Chapter10 文件和异常">
 <meta name="keywords" content="高级编程技术,python,homework">
 <meta property="og:type" content="article">
 <meta property="og:title" content="exercise_week6">
 <meta property="og:url" content="https://sysPursuer.github.io/2018/04/14/hw6/index.html">
 <meta property="og:site_name" content="sysPursuer&#39;s blog">
-<meta property="og:description" content="Chapter10 文件和异常 10-1 python学习笔记。  123456789with open(&quot;learn_py.txt&quot;) as file_obj:	contents = file_obj.read()	print(contents)	file_obj.seek(0,0)	for line in file_obj:		print(line.rstrip())	file_obj.see">
-<meta property="og:updated_time" content="2018-04-30T16:41:04.040Z">
+<meta property="og:description" content="Chapter10 文件和异常">
+<meta property="og:updated_time" content="2018-04-30T17:03:03.972Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="exercise_week6">
-<meta name="twitter:description" content="Chapter10 文件和异常 10-1 python学习笔记。  123456789with open(&quot;learn_py.txt&quot;) as file_obj:	contents = file_obj.read()	print(contents)	file_obj.seek(0,0)	for line in file_obj:		print(line.rstrip())	file_obj.see">
+<meta name="twitter:description" content="Chapter10 文件和异常">
   
     <link rel="alternative" href="/atom.xml" title="sysPursuer&#39;s blog" type="application/atom+xml">
   
@@ -164,7 +164,8 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="Chapter10-文件和异常"><a href="#Chapter10-文件和异常" class="headerlink" title="Chapter10 文件和异常"></a>Chapter10 文件和异常</h3><ul>
+        <h3 id="Chapter10-文件和异常"><a href="#Chapter10-文件和异常" class="headerlink" title="Chapter10 文件和异常"></a>Chapter10 文件和异常</h3><a id="more"></a>
+<ul>
 <li>10-1 python学习笔记。</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">with</span> open(<span class="string">"learn_py.txt"</span>) <span class="keyword">as</span> file_obj:</span><br><span class="line">	contents = file_obj.read()</span><br><span class="line">	print(contents)</span><br><span class="line">	file_obj.seek(<span class="number">0</span>,<span class="number">0</span>)</span><br><span class="line">	<span class="keyword">for</span> line <span class="keyword">in</span> file_obj:</span><br><span class="line">		print(line.rstrip())</span><br><span class="line">	file_obj.seek(<span class="number">0</span>,<span class="number">0</span>)</span><br><span class="line">	lines = file_obj.readlines()</span><br><span class="line">	print(lines)</span><br></pre></td></tr></table></figure>
