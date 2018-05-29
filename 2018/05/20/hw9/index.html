@@ -15,7 +15,7 @@
 <meta property="og:url" content="https://sysPursuer.github.io/2018/05/20/hw9/index.html">
 <meta property="og:site_name" content="sysPursuer&#39;s blog">
 <meta property="og:description" content="Numpy exercisesGenerate matrices A, with random Gaussian entries, B, a Toeplitz matrix, where A ∈R^(n×m) and B ∈R^(m×m), for n = 200, m = 500.  Exercise 9.1: Matrix operations Calculate A + A, AA,AAT">
-<meta property="og:updated_time" content="2018-05-22T14:28:25.831Z">
+<meta property="og:updated_time" content="2018-05-23T11:55:08.399Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="numpy exercises">
 <meta name="twitter:description" content="Numpy exercisesGenerate matrices A, with random Gaussian entries, B, a Toeplitz matrix, where A ∈R^(n×m) and B ∈R^(m×m), for n = 200, m = 500.  Exercise 9.1: Matrix operations Calculate A + A, AA,AAT">
@@ -166,12 +166,12 @@
       
         <h3 id="Numpy-exercises"><a href="#Numpy-exercises" class="headerlink" title="Numpy exercises"></a>Numpy exercises</h3><p>Generate matrices A, with random Gaussian entries, B, a Toeplitz matrix, where A ∈R^(n×m) and B ∈R^(m×m), for n = 200, m = 500.</p>
 <ul>
-<li>Exercise 9.1: Matrix operations Calculate A + A, AA,AAT and AB. Write a function that computes A(B−λI) for any λ. <a id="more"></a>
+<li><p>Exercise 9.1: Matrix operations Calculate A + A, AA,AAT and AB. Write a function that computes A(B−λI) for any λ. </p>
+<a id="more"></a>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> scipy.linalg <span class="keyword">import</span> toeplitz</span><br><span class="line"></span><br><span class="line">A = np.random.normal(<span class="number">0.</span>,<span class="number">1.</span>,(<span class="number">200</span>,<span class="number">500</span>))</span><br><span class="line">B = toeplitz(np.array(list(range(<span class="number">1</span>,<span class="number">501</span>))))</span><br><span class="line">sumA = A+A</span><br><span class="line">productA = A.dot(A.T)</span><br><span class="line">productAT = A.T.dot(A)</span><br><span class="line">productAB = A.dot(B)</span><br><span class="line">print(<span class="string">"sum A+A:"</span>)</span><br><span class="line">print(sumA)</span><br><span class="line">print(<span class="string">"product AA:"</span>)</span><br><span class="line">print(productA)</span><br><span class="line">print(<span class="string">'product AAT:'</span>)</span><br><span class="line">print(productAT)</span><br><span class="line">print(<span class="string">'product AB:'</span>)</span><br><span class="line">print(productAB)</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">compute</span><span class="params">(A,B,linda)</span>:</span></span><br><span class="line">    temp = B-linda*np.eye(<span class="number">500</span>)</span><br><span class="line">    <span class="keyword">return</span>  A@B</span><br></pre></td></tr></table></figure>
 </li>
-</ul>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"><span class="keyword">from</span> scipy.linalg <span class="keyword">import</span> toeplitz</span><br><span class="line"></span><br><span class="line">A = np.random.normal(<span class="number">0.</span>,<span class="number">1.</span>,(<span class="number">200</span>,<span class="number">500</span>))</span><br><span class="line">sumA = A+A</span><br><span class="line">productA = A.dot(A.T)</span><br><span class="line">productAT = A.T.dot(A)</span><br><span class="line">productAB = A.dot(B)</span><br><span class="line">print(<span class="string">"sum A+A:"</span>)</span><br><span class="line">print(sumA)</span><br><span class="line">print(<span class="string">"product AA:"</span>)</span><br><span class="line">print(productA)</span><br><span class="line">print(<span class="string">'product AAT:'</span>)</span><br><span class="line">print(productAT)</span><br><span class="line">print(<span class="string">'product AB:'</span>)</span><br><span class="line">print(productAB)</span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">compute</span><span class="params">(A,B,linda)</span>:</span></span><br><span class="line">    temp = B-linda*np.eye(<span class="number">500</span>)</span><br><span class="line">    <span class="keyword">return</span>  A@B</span><br></pre></td></tr></table></figure>
-<ul>
-<li>Exercise 9.2: Solving a linear system Generate a vector b with m entries and solve Bx = b.</li>
+<li><p>Exercise 9.2: Solving a linear system Generate a vector b with m entries and solve Bx = b.</p>
+</li>
 </ul>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">b=np.array(list(range(<span class="number">0</span>,<span class="number">500</span>)))</span><br><span class="line">x=np.linalg.solve(B,b)</span><br><span class="line">print(x)</span><br></pre></td></tr></table></figure>
 <ul>
@@ -304,6 +304,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2018/05/27/hw10/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          numpy exercises
+        
+      </div>
+    </a>
   
   
     <a href="/2018/04/28/hw8/" id="article-nav-older" class="article-nav-link-wrap">
@@ -469,15 +478,19 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
               </li>
              
               <li class="article-tag-list-item">
-                <a href="javascript:void(0)" class="js-tag color1">numpy</a>
-              </li>
-             
-              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">leetcode</a>
               </li>
              
               <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">numpy</a>
+              </li>
+             
+              <li class="article-tag-list-item">
                 <a href="javascript:void(0)" class="js-tag color4">pygame模块</a>
+              </li>
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color1">matplotlib</a>
               </li>
             
             <div class="clearfix"></div>
